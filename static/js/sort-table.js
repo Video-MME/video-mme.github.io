@@ -276,6 +276,9 @@ sortTable.init = function() {
                     continue;
                 }
                 // Define which column the header should invoke sorting for
+                if (THead.rows[rowNum].cells[cellNum].getAttribute('data-js-sort-colNum')) {
+                    colNum = parseInt(THead.rows[rowNum].cells[cellNum].getAttribute('data-js-sort-colNum'));
+                }
                 THead.rows[rowNum].cells[cellNum].setAttribute('data-js-sort-colNum', colNum);
                 Handler = sortTable.getClickHandler(Tables[i], colNum);
                 window.addEventListener
