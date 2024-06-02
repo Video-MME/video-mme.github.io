@@ -435,7 +435,7 @@
   <div class="container">
     <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths" style="width: 100%;">
-        <h2 class="title is-3">Examples</h2>
+        <h2 class="title is-3">Data Examples</h2>
         <div class="content has-text-justified">
 
         <div id="results-carousel" class="carousel results-carousel">  
@@ -482,7 +482,7 @@
     <div class="columns is-centered">
       <div class="column">
         <div class="content has-text-centered">
-          <h2 class="title is-3" style="margin-top: 30px;">Benchmark Category Hierarchy </h2>
+          <h2 class="title is-3" style="margin-top: 30px;">Benchmark Statistics</h2>
           
           <!-- bing tu -->
           <div class="container-wrapper">
@@ -512,7 +512,7 @@
             The comparison of various benchmarks encompasses several key aspects: 
                 the total number of videos, the number of clips, the average duration of the videos, the method of video annotation (manual denoted as M, automated as A), 
                 the average number of QA pair tokens, the average number of subtitle tokens, whether the videos cover multiple duration levels, 
-                whether the videos are sourced from a broad range of open domains and whether provide audio. 
+                whether the videos are sourced from a broad range of open domains, and whether provide subtitle together with audio information. 
                 It is important to note that if a dataset includes multiple task formats, our comparison focuses solely on the multiple-choice segment.
           </p>
         </div>
@@ -534,11 +534,11 @@
 
     <div class="columns is-centered m-6">
       <div class="column is-full has-text-centered content">
-        <h2 class="title is-3">Results on Different Question Types</h2>
+        <h2 class="title is-3">Different Question Types</h2>
           <div class="box m-5">
             <div class="content has-text-centered">
               <img src="static/images/exp_results/results_of_question_types.png" alt="grade-lv" width="50%"/>
-              <p>Evaluation results of four representative MLLM models across different task types.</p>
+              <p>Evaluation results of four representative MLLMs.</p>
             </div>
           </div>
       </div>
@@ -546,12 +546,12 @@
 
     <div class="columns is-centered m-6">
       <div class="column is-full has-text-centered content">
-        <h2 class="title is-3">Results on Different Video Types</h2>
+        <h2 class="title is-3">Different Video Duration Types</h2>
 
           <div class="box m-5">
             <div class="content has-text-centered">
               <img src="static/images/exp_results/results_of_video_types.png" alt="" width="80%"/>
-              <p>Evaluation results of Gemini 1.5 Pro across different video domains.</p>
+              <p>Evaluation results of Gemini 1.5 Pro.</p>
             </div>
           </div>
 
@@ -561,17 +561,17 @@
             
               <div class="content has-text-centered">
                 <img src="static/images/exp_results/results_of_video_sub_types-1.jpg" alt="" width="70%"/>
-                <p style="margin-bottom: 30px;">Evaluation results of Gemini 1.5 Pro across different video subcategories (1).</p>
+                <p style="margin-bottom: 30px;">(1) Evaluation results of Gemini 1.5 Pro across different video subcategories.</p>
               </div>
             
               <div class="content has-text-centered">
                 <img src="static/images/exp_results/results_of_video_sub_types-2.jpg" alt="" width="70%"/>
-                <p style="margin-bottom: 30px;">Evaluation results of Gemini 1.5 Pro across different video subcategories (2).</p>
+                <p style="margin-bottom: 30px;">(2) Evaluation results of Gemini 1.5 Pro across different video subcategories.</p>
               </div>
 
               <div class="content has-text-centered">
                 <img src="static/images/exp_results/results_of_video_sub_types-3.jpg" alt="" width="70%"/>
-                <p style="margin-bottom: 30px;">Evaluation results of Gemini 1.5 Pro across different video subcategories (3).</p>
+                <p style="margin-bottom: 30px;">(3) Evaluation results of Gemini 1.5 Pro across different video subcategories.</p>
               </div>
 
             </div>
@@ -584,24 +584,6 @@
   </div>
 </section>
 
-
-<section class="hero is-light is-small">
-  <div class="hero-body has-text-centered">
-    <h1 class="title is-1 mathvista_other" id="license">License</h1>
-  </div>
-</section>
-
-<section>
-  <div class="container is-max-desktop content", style="margin-top: 20px; margin-bottom: 20px;">
-    <p>To utilize Video-MME, you are required to adherence certain restrictions. Please read and agree to the following terms: </p>
-    <ul>
-      <li>You agree to use the dataset only for the scientific research and commercial use in any form is strictly forbidden.</li>
-      <li>You agree not to redistribute, publish, copy or disseminate the dataset, in whole or in part, to any third party without explicit permission from the dataset provider. </li>
-      <li>You agree to maintain the integrity of the dataset and not alter or manipulate the data in any way that could compromise its accuracy or validity.</li>
-      <li>You agree to use the dataset at your own risk and acknowledges that the dataset provider is not responsible for any consequences resulting from its use.</li>
-    </ul>
-    <p>The copyright of the videos belongs to the original authors. <strong>If there is any infringement in Video-MME, please email us at videomme2024@gmail.com to address it.</strong></p>
-  </div>
 
 </section>
 <section class="hero is-light is-small">
@@ -613,11 +595,12 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <pre><code>@article{fu2024videomme,
-  author    = {Chaoyou, Fu and Yuhan, Dai and Yongdong, Luo and Lei, Li and Shuhuai, Ren and Renrui, Zhang and Zihan, Wang and Chenyu, Zhou and Yunhang, Shen and Mengdan, Zhang and Peixian, Chen and Yanwei, Li and Shaohui, Lin and Sirui, Zhao and Ke, Li and Tong, Xu and Xiawu, Zheng and Enhong, Chen and Rongrong, Ji and Xing, Sun},
-  title     = {Video-MME: The First-Ever Comprehensive Evaluation Benchmark of Multi-modal LLMs in Video Analysis},
-  journal   = {ArXiv Preprint},
-  year      = {2024}
-}</code></pre>
+  title={Video-MME: The First-Ever Comprehensive Evaluation of Multi-modal LLMs in Video Analysis},
+  author={Fu, Chaoyou and Dai, Yuhan and Luo, Yongdong and Li, Lei and Ren, Shuhuai and Zhang, Renrui and Wang, Zihan and Zhou, Chenyu and Shen, Yunhang and Zhang, Mengdan and Chen, Peixian and Li, Yanwei and Lin, Shaohui and Zhao, Sirui and Li, Ke and Xu, Tong and Zheng, Xiawu and Chen, Enhong and Ji, Rongrong and Sun, Xing},
+  journal={arXiv preprint},
+  year={2024}
+}
+</code></pre>
   </div>
 </section>
 
