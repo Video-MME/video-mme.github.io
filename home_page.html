@@ -479,10 +479,13 @@
           </tbody>                                                   
         </table> 
 
-        <p style="margin-top: -20px; text-align: left;">
+        <p style="margin-top: -20px;">
           <strong style="color: #22a56e; font-size: 18px;" >Green date</strong> indicates the newly added models  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-          </br>- indicates closed-source models
-          </br>1* The short and medium videos are sampled at 1 fps, while the long videos are sampled at 2 fps to ensure the stability of the test.
+          - indicates closed-source models
+        </p>
+
+        <p style=" text-align: left;">
+          1* The short and medium videos are sampled at 1 fps, while the long videos are sampled at 2 fps to ensure the stability of the test.
           </br>2* The videos less than 384 seconds are sampled at 1 fps, and for those videos longer than 384 seconds, we extract 384 frames uniformly. All the frames are resized to 512x512 pixels to fit within GPT-4o’s context window.
         </p>
 
