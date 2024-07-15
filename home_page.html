@@ -35,7 +35,14 @@
 
   <script src="./visualizer/data/data_public.js" defer></script>
 
-  
+  <style>
+    .no-sort {
+        cursor: default;
+        pointer-events: none;
+        background-image: none !important; /* Remove the sort arrow */
+    }
+  </style>
+    
 
 </head>
 <body>
@@ -242,11 +249,11 @@
           <table class="js-sort-table" id="results" style="margin-left: auto; margin-right: auto;">
             <thead>
               <tr>
-                <th rowspan="2" style="vertical-align: middle; width: 50px;" data-js-sort-colNum="none"><strong>#</strong></th>
-                <th rowspan="2" style="vertical-align: middle; width: 180px;" data-js-sort-colNum="none"><strong>Model</strong></th>
-                <th rowspan="2" style="vertical-align: middle; width: 50px;" data-js-sort-colNum="none"><strong>LLM <br>Params</strong></th>
-                <th rowspan="2" style="vertical-align: middle; width: 100px;" data-js-sort-colNum="none"><strong>Frames</strong></th>
-                <th rowspan="2" style="vertical-align: middle; width: 110px;" data-js-sort-colNum="none"><strong>Date</strong></th>
+                <th rowspan="2" class="no-sort" style="vertical-align: middle; width: 50px;" data-js-sort-colNum="none"><strong>#</strong></th>
+                <th rowspan="2" class="no-sort" style="vertical-align: middle; width: 180px;" data-js-sort-colNum="none"><strong>Model</strong></th>
+                <th rowspan="2" class="no-sort" style="vertical-align: middle; width: 50px;" data-js-sort-colNum="none"><strong>LLM <br>Params</strong></th>
+                <th rowspan="2" class="no-sort" style="vertical-align: middle; width: 100px;" data-js-sort-colNum="none"><strong>Frames</strong></th>
+                <th rowspan="2" class="no-sort" style="vertical-align: middle; width: 110px;" data-js-sort-colNum="none"><strong>Date</strong></th>
                 <th colspan="2" style="vertical-align: middle; width: 300px;" data-js-sort-colNum="6"><strong>Overall (%)</strong></th>
                 <th colspan="2" style="vertical-align: middle; width: 300px;" data-js-sort-colNum="8"><strong>Short Video (%)</strong></th>
                 <th colspan="2" style="vertical-align: middle; width: 300px;" data-js-sort-colNum="10"><strong>Medium Video (%)</strong></th> 
