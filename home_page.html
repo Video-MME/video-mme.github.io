@@ -93,26 +93,6 @@
           </h2>
           
           <div class="is-size-5 publication-authors", style="width: 80%; margin: 20px auto;", >
-            <!-- <span class="author-block">Chaoyou Fu,</span>
-            <span class="author-block">Yuhan Dai<sup style="color:#6fbf73;">1</sup>,</span>
-            <span class="author-block">Yongdong Luo<sup style="color:#ed4b82;">2</sup>,</span>
-            <span class="author-block">Lei Li<sup style="color:#ed4b82">3</sup>,</span>
-            <span class="author-block">Shuhuai Ren<sup style="color:#ffac33">4</sup>,</span>
-            <span class="author-block">Renrui Zhang<sup style="color:#18acfb">5</sup>,</span>
-            <span class="author-block">Zihan Wang<sup style="color:#33ffd6">6</sup>,</span>
-            <span class="author-block">Chenyu Zhou<sup style="color:#ed4b82">2</sup>,</span>
-            <span class="author-block">Yunhang Shen,</span>
-            <span class="author-block">Mengdan Zhang,</span>
-            <span class="author-block">Peixian Chen,</span>
-            <span class="author-block">Yanwei Li<sup style="color:#18acfb">5</sup>,</span>
-            <span class="author-block">Shaohui Lin<sup style="color:#33ffd6">6</sup>,</span>
-            <span class="author-block">Sirui Zhao<sup style="color:#6fbf73;">1</sup>,</span>
-            <span class="author-block">Ke Li,</span>
-            <span class="author-block">Tong Xu<sup style="color:#6fbf73;">1</sup>,</span>
-            <span class="author-block">Xiawu Zheng<sup style="color:#ed4b82;">2</sup>,</span>
-            <span class="author-block">Enhong Chen<sup style="color:#6fbf73;">1</sup>,</span>
-            <span class="author-block">Rongrong Ji<sup style="color:#ed4b82;">2</sup>,</span>
-            <span class="author-block">Xing Sun</span> -->
             <span class="author-block", style="font-size:24px"><a href="https://github.com/BradyFU/Video-MME">Video-MME Team</a></span>
 
         </div>
@@ -280,7 +260,7 @@
                   </b>
                 </td>
                 <td style="vertical-align: middle;">- </td>
-                <td style="vertical-align: middle;">1/2 fps<sup>1*</sup> </td>
+                <td style="vertical-align: middle;">1/0.5 fps<sup>1*</sup> </td>
                 <td style="vertical-align: middle;">2024-06-15</td>
                 <td style="vertical-align: middle;"><b class="">75.0</b></td>
                 <td style="vertical-align: middle;"><b class="">81.3</b></td>
@@ -297,7 +277,7 @@
                   <p style="font-size: 12px; margin-left: 5px; color: #858383;">Alibaba</p>
                 </a></b></td>
                 <td style="vertical-align: middle;">72B </td>
-                <td style="vertical-align: middle;">768 </td>
+                <td style="vertical-align: middle;">768<sup>3*</sup> </td>
                 <td style="vertical-align: middle;"><strong style="color: #22a56e;" >2024-08-19</strong></td>
                 <td style="vertical-align: middle;"><b class="">71.2</b></td>
                 <td style="vertical-align: middle;"><b class="">77.8</b></td>
@@ -334,7 +314,7 @@
                   </b>
                 </td>
                 <td style="vertical-align: middle;">- </td>
-                <td style="vertical-align: middle;">1/2 fps<sup>1*</sup> </td>
+                <td style="vertical-align: middle;">1/0.5 fps<sup>1*</sup> </td>
                 <td style="vertical-align: middle;">2024-06-15</td>
                 <td style="vertical-align: middle;"><b class="">70.3</b></td>
                 <td style="vertical-align: middle;"><b class="">75.0</b></td>
@@ -753,8 +733,9 @@
         </p>
 
         <p style=" text-align: left;">
-          1* The short and medium videos are sampled at 1 fps, while the long videos are sampled at 2 fps to ensure the stability of the API.
+          1* The short and medium videos are sampled at 1 fps, while the long videos are sampled at 0.5 fps to ensure the stability of the API.
           </br>2* The videos less than 384 seconds are sampled at 1 fps, and for those longer than 384 seconds, we extract 384 frames uniformly. All the frames are resized to 512x512 resolution to fit within GPT-4o’s max context length.
+          </br>3* The videos are sampled at 2 fps, and the upper limit is 768 frames.
         </p>
 
         </div>
