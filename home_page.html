@@ -388,7 +388,7 @@
                 <td style="vertical-align: middle;">62.6</td>
                 <td style="vertical-align: middle;">64.8</td>                                 
               </tr>
-<!--               <tr>
+              <tr>
                 <td style="vertical-align: middle;"></td>
                 <td style="text-align: left; padding: 2px 10px;">
                   <b class="">
@@ -397,8 +397,8 @@
                   </b>
                 </td>
                 <td style="vertical-align: middle;">7B </td>
-                <td style="vertical-align: middle;">1 </td>
-                <td style="vertical-align: middle;"><strong style="color: #22a56e;" >2025-03-19</strong></td>
+                <td style="vertical-align: middle;">1 fps<sup>4*</sup> </td>
+                <td style="vertical-align: middle;"><strong style="color: #22a56e;" >2025-04-02</strong></td>
                 <td style="vertical-align: middle;"><b class="">67.5</b></td>
                 <td style="vertical-align: middle;"><b class="">73.5</b></td>
                 <td style="vertical-align: middle;">78.9</td>
@@ -407,7 +407,7 @@
                 <td style="vertical-align: middle;">71.2</td>
                 <td style="vertical-align: middle;">57.8</td>
                 <td style="vertical-align: middle;">68.1</td>                                  
-              </tr>                       -->
+              </tr>                       
               <tr>
                 <td style="vertical-align: middle;"></td>
                 <td style="text-align: left; padding: 2px 10px;">
@@ -1067,6 +1067,7 @@
           1* The short and medium videos are sampled at 1 fps, while the long videos are sampled at 0.5 fps to ensure the stability of the API.
           </br>2* The videos less than 384 seconds are sampled at 1 fps, and for those longer than 384 seconds, we extract 384 frames uniformly. All the frames are resized to 512x512 resolution to fit within GPT-4o’s max context length.
           </br>3* The videos are sampled at 2 fps, and the upper limit is 768 frames.
+          </br>4* The videos are sampled at 1 fps, and the upper limit is 600 frames.
         </p>
 
         </div>
